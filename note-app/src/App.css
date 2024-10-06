@@ -1,0 +1,138 @@
+
+body{
+  background-color: #5ec7f4;
+}
+.header{
+  margin:0 auto;
+  justify-content: center;
+  display: flex;
+  gap:20px;
+  width:min(800px,100%);
+  justify-content: space-between;
+}
+.header input{
+  padding:18px;
+  width:80%;
+  font-size:20px;
+  outline:none;
+  border: none;
+  border-radius: 10px;
+  box-shadow:0 0 10px #17647d inset;
+}
+.header input:focus{
+  outline: 2px solid #1e90ff;
+}
+
+.header button{
+  padding:20px;
+  border:none;
+  background-color: #1e90ff;
+  color:white;
+  font-size:20px;
+  box-shadow: 0 0 5px #1e90ff;
+  border-radius: 10px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+.header button:hover{
+  background-color: #057aee;
+  box-shadow: 0 0 5px #057aee;
+}
+
+.note-container{
+  overflow:auto;
+  background-color: #f0f8ffc8;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #0a0aa5;
+  width:min(800px,100%);
+  margin:20px auto;
+  display:flex;
+  align-items: center;
+  flex-direction:column;
+}
+.Note{
+  display:flex;
+  align-items:center;
+  margin:10px;
+  width:90%;
+}
+.editDelete{
+  padding: 5px;
+  display:flex;
+  align-items:center;
+  justify-content: space-between;
+  background-image: linear-gradient(to left,#95e1f6,#90ee90,#57c557);
+  border-radius:1% 99% 2% 98% / 89% 8% 92% 11% ;
+  width: 100%;
+  gap:10px;
+  overflow:auto;
+  scrollbar-width: none;
+}
+.Note-Text{
+  width:600px;
+  height:65px;
+  border:1px solid #023140;
+  box-shadow:0 0 8px #0000ff inset;
+  padding:8px;
+  color:#151e21;
+  border-radius:5px;
+  font-size: 19px;
+  overflow:auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  word-break:keep-all;
+}
+
+
+.editDelete button{
+  padding:15px;
+  background-color: #778899;
+  color:#ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  font-size: 16px;
+}
+.editDelete button:hover , .editedNote button:hover{
+  background-color: #546a80;
+  box-shadow:0 0 6px  #546a80;
+}
+
+
+/* edit note style */
+
+.editedNote{
+  padding:10px;
+  margin:10px;
+  display:flex;
+  align-items:stretch;
+  justify-content: space-between;
+  background-image: linear-gradient(to left,#95e1f6,#90ee90,#57c557);
+  width: 100%;
+  gap:10px;
+  overflow:auto;
+}
+
+.editedNote input{
+  padding:15px;
+  width:80%;
+  outline:none;
+  border-radius: 10px;
+  border:none;
+  font-size:18px;
+  box-shadow: 0 0 5px #3f4d4d inset;
+}
+
+.editedNote input:focus{
+  outline:2px solid #1e90ff;
+}
+.editedNote button{
+  background-color: #778899;
+  color:#ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  font-size: 16px;
+}
